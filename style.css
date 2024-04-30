@@ -256,36 +256,208 @@ nav .signup-login a:last-child:hover {
   padding: 5rem 0;
 }
 
-.travel .container .box{
-    padding: 0 1rem;
-    text-align: center;
-    max-width: 30rem;
-    /* transform: translate(0, 100px);
+.travel .container .box {
+  padding: 0 1rem;
+  text-align: center;
+  max-width: 30rem;
+  /* transform: translate(0, 100px);
     opacity: 0; */
 }
 
-.travel .container .box img{
-    height: 10rem;
+.travel .container .box img {
+  height: 10rem;
 }
 
-.travel .container .box h4{
-    font-size: 1.2rem;
-    margin: 1rem 0;
-    margin-top: 2rem;
-    font-weight: 600;
+.travel .container .box h4 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  margin-top: 2rem;
+  font-weight: 600;
 }
 
-.travel .container .box p{
-    color: #666;
+.travel .container .box p {
+  color: #666;
 }
 /* travel section ends here  */
 
 /* destination section starts here  */
+.destination {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
+.destination .container {
+  width: 100%;
+}
+
+.destination .container .container-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.destination .container .container-box .heading {
+  max-width: 30rem;
+}
+
+.destination .container .container-box .content {
+  max-width: 35rem;
+}
+
+.destination .container .container-box .content p {
+  line-height: 1.7rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.destination .container .container-box .content a {
+  color: var(--green-color);
+  font-weight: 600;
+}
+.destination .container .container-box .content a i {
+  margin-left: 0.5rem;
+}
+
+.destination .container .container-box .content a:hover i {
+  margin-left: 0.1rem;
+}
+
+.gallery {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gallery .box {
+  height: 23rem;
+  flex-grow: 1;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  position: relative;
+}
+
+.gallery .box img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.gallery .box .text {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem 2rem;
+  left: 0;
+  z-index: 1;
+}
+
+.gallery .box .text h2{
+  font-size: 1.4rem;
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+/* .destination .container .container-box .heading,
+.destination .container .container-box .content{
+  transform: translate(-200px);
+  opacity: 0;
+}
+
+.destination .gallery .box{
+  transform: translate(0, 100px);
+  opacity: 0;
+} */
 /* destination section ends here  */
 
 /* featured section starts here  */
+.featured{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
+.featured .gallery .box:first-child{
+  border: 1px solid rgba(0, 0, 0, .3);
+  padding: 2rem 1.5rem;
+}
+
+.featured .gallery .box:first-child h2{
+  margin-bottom: .5rem;
+}
+
+.featured .gallery .box:first-child p{
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.featured .gallery .box:first-child a{
+  position: absolute;
+  bottom: 2rem;
+  padding: .4rem 1rem;
+  color: var(--white-color);
+  background: var(--green-color);
+  border-radius: 3rem;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.featured .gallery .box:first-child a:hover{
+  background: #02636e;
+}
+
+.featured .gallery .box:first-child .image{
+  width: 40%;
+  position: absolute;
+  bottom: -1rem;
+  right: 2rem;
+}
+
+.featured .gallery .box .content{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem 2rem;
+
+  
+
+}
+
+.featured .gallery .box .content h2{
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.featured .gallery .box .content p{
+  font-size: .9rem;
+
+  color: #eee;
+}
+
+.featured .gallery .box .content .review-and-idr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured .gallery .box .content .review-and-idr .review{
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+.featured .gallery .box .content .review-and-idr .review i{
+  color:#ffa600
+}
+
+.featured .gallery .box .content .review-and-idr p{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--white-color);
+}
 /* featured section ends here  */
 
 /* feedback section starts here  */
